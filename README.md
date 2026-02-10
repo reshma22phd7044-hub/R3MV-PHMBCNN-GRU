@@ -1,5 +1,3 @@
-**R3MV architecture**
-
 This study introduces a unique CNN, PHMBCNN, designed to enhance classification accuracy using a progressive learning strategy. 
 
 
@@ -17,6 +15,7 @@ The proposed PHMBCNN is a Progressive Heterogeneous Multi-Block CNN. It is made 
 **PHMBCNN-GRU Architecture**
 PHMBCNN-GRU is build by adding GRU layer at the end of th ePHMBCNN architecture, this will enhanec the models perfromance.
 
+**R3MV architecture**
 
 We propose the R3MV three-tier decision fusion system, which integrates predictions from 
 
