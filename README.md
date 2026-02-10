@@ -2,6 +2,7 @@ This study introduces a unique CNN, PHMBCNN, designed to enhance classification 
 
 
 **PHMBCNN Architecture**
+
 The proposed PHMBCNN is a Progressive Heterogeneous Multi-Block CNN. It is made up of four computational blocks called 
   a. RMD Block: Residual blokc+ MBConv+ DSC block
   b. XRM Block: Xception block+ Residual+ MBConv block
