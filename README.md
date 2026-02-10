@@ -3,10 +3,14 @@ This study introduces a unique CNN, PHMBCNN, designed to enhance classification 
 
 **PHMBCNN Architecture**
 
-The proposed PHMBCNN is a Progressive Heterogeneous Multi-Block CNN. It is made up of four computational blocks called 
+The proposed PHMBCNN is a Progressive Heterogeneous Multi-Block CNN. It is made up of four computational blocks called
+
   a. RMD Block: Residual blokc+ MBConv+ DSC block
+  
   b. XRM Block: Xception block+ Residual+ MBConv block
+  
   c. SEMD Block: Squeeze Excite block+ MBConv+ DSC block
+  
   d. MRD Block: MBConv block+ Residual+ DSC block.
 
   The first sub block in all four blokcs are used for extracting the features from the input and sequential sub blokcs are used for processing those features.
@@ -14,7 +18,8 @@ The proposed PHMBCNN is a Progressive Heterogeneous Multi-Block CNN. It is made 
 <img width="958" height="813" alt="image" src="https://github.com/user-attachments/assets/1c462a22-f235-4d9f-8719-052a6e4b6c4d" />
 
 **PHMBCNN-GRU Architecture**
-PHMBCNN-GRU is build by adding GRU layer at the end of th ePHMBCNN architecture, this will enhanec the models perfromance.
+
+PHMBCNN-GRU is build by adding GRU layer at the end of the PHMBCNN architecture, this will enhanec the models performance.
 
 **R3MV architecture**
 
@@ -40,12 +45,15 @@ We propose the R3MV three-tier decision fusion system, which integrates predicti
 A pretrained version of models are used for the remaining Deep Learning modles. The prediction results of all these individual models are saved for later purpose.
 
 **(ii) Feature Fusion Classification**
-In this block the features are extracted from all the individual models and MLP classifier is used or classification of skin lesion image. to improve the performence of classification, the extracted features are refined by using the PCA and Mutual Information ranking. The Top k- no of features are passed as input to the MLP classifier.
+
+In this block the features are extracted from all the individual models and MLP classifier is used or classification of skin lesion image. To improve the performance of classification, the extracted features are refined by using the PCA and Mutual Information ranking. The Top k- no of features are passed as input to the MLP classifier.
 
 **(iii) Decision level Classification**
-in this level SVM classifier is used as meta classifier and trained on the predictions of the individual classifiers. to improve the classification rate the model combinations producing the higher classification accuarcy are considered for final state of classification.
+
+In this level SVM classifier is used as meta classifier and trained on the predictions of the individual classifiers. To improve the classification rate the model combinations producing the higher classification accuarcy are considered for final state of classification.
 
 **Final stage-Majority Vote**
-Majority voting mechnism is applied on all the predicions of individual models, feature fusion MLP classifier, decision levle SVM classifier. this type of frame work improves the overall reliaility on the final outcome as it passed threough three level of decision mechanism.
+
+Majority voting mechnism is applied on all the predicions of individual models, feature fusion MLP classifier, decision levle SVM classifier. This type of frame work improves the overall reliaility on the final outcome as it passed threough three level of decision mechanism.
 
 
